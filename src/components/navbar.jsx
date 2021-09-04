@@ -117,7 +117,7 @@ class Navbar extends React.Component {
               </li>
               <li className="nav-item">
                 <a className="nav-link js-scroll" href="#stage3">
-                  Stage 3
+                  Study
                 </a>
               </li>
              
