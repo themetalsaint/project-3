@@ -1,6 +1,6 @@
 # Interview Helper App
 
-This project has been developed to help developers and coders to want to prepare for interviews. 
+This project has been created to help developers and coders to want to prepare for interviews. 
 
 # Interview Quiz
 
