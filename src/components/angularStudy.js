@@ -1,4 +1,3 @@
-   
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
@@ -10,6 +9,12 @@ import AccordionDetails from '@material-ui/core/AccordionDetails';
 import StudyNav from './studyNav'
 
 const useStyles = makeStyles((theme) => ({
+
+  navStyle:{
+    display: "inline-block",
+    alignContent: 'center',
+   
+  },
 
   bgImage:{
     minWidth: 100,
@@ -55,7 +60,7 @@ export default function ReviewCard() {
     
 <>
 <div className={classes.bgImage} style={{
-  backgroundImage: `url("https://www.teahub.io/photos/full/252-2524172_calm-wallpaper-calm-blue-ocean-background.jpg")`
+  backgroundImage: `url("https://upload.wikimedia.org/wikipedia/commons/2/23/Lake_mapourika_NZ.jpeg")`
 }}>
        
     <div className={classes.root}>
@@ -141,9 +146,9 @@ export default function ReviewCard() {
       </Accordion>
      
     </div>
-    <StudyNav className={classes.navStyle} />
     <div>
 
+    <StudyNav className={classes.navStyle} />
 
     </div>
     
@@ -152,35 +157,3 @@ export default function ReviewCard() {
     </>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
