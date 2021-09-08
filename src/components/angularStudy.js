@@ -2,11 +2,11 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import { Grid } from '@material-ui/core'
 import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
-import StudyNav from './studyNav'
+import StudyNav from './studyNav';
+import Navbar from './navbar';
 
 const useStyles = makeStyles((theme) => ({
 
@@ -62,6 +62,7 @@ export default function ReviewCard() {
 <div className={classes.bgImage} style={{
   backgroundImage: `url("https://upload.wikimedia.org/wikipedia/commons/2/23/Lake_mapourika_NZ.jpeg")`
 }}>
+    <Navbar />
        
     <div className={classes.root}>
       <Accordion>

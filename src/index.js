@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import App from './App';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -29,9 +30,10 @@ import Angular from './components/angularStudy';
 
 ReactDOM.render(
   <React.Fragment>
-      <Navbar />
+    <App />
+      {/* <Navbar />
       <Study />
-      <Angular />
+      <Angular /> */}
       {/* <Main /> */}
       {/* <Calm/> */}
      
