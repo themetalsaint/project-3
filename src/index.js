@@ -22,14 +22,18 @@ import 'lightbox2/dist/js/lightbox.min.js';
 import Navbar from './components/navbar.jsx';
 import Main from './components/Main.jsx';
 import Calm from './components/calm.jsx';
+import Study from './components/reactStudy';
+import Angular from './components/angularStudy';
 
 
 
 ReactDOM.render(
   <React.Fragment>
       <Navbar />
-      <Main />
-      <Calm/>
+      <Study />
+      <Angular />
+      {/* <Main /> */}
+      {/* <Calm/> */}
      
   </React.Fragment>,
 document.getElementById('root'));

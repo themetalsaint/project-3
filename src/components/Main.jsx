@@ -10,7 +10,7 @@ class Main extends React.Component {
           <div className="row">
             <div className="col-sm-12">
               <div className="title-box text-center">
-                <h3 className="title-a">Interveiw helper</h3>
+                <h3 className="title-a">Interview helper</h3>
                 <p className="subtitle-a">
                   Welcome
                 </p>

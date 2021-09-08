@@ -2,7 +2,6 @@ import React from "react";
 import $ from "jquery";
 
 
-
 class Navbar extends React.Component {
  
 
@@ -116,7 +115,7 @@ class Navbar extends React.Component {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll" href="#stage3">
+                <a className="nav-link " href='#Study'>
                   Study
                 </a>
               </li>

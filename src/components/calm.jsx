@@ -23,7 +23,7 @@ class Calm extends React.Component {
                   <Typed
                     strings={[
                       "Take your time",
-                      "Dont Worry",
+                      "Don't Worry",
                       "Take a break"
                     ]}
                     typeSpeed={80}
