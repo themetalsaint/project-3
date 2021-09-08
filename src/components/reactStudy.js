@@ -16,6 +16,11 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import { Grid } from '@material-ui/core';
 
+
+
+
+
+
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
@@ -42,14 +47,18 @@ const useStyles = makeStyles((theme) => ({
 export default function RecipeReviewCard() {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
-
+ 
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
 
   return (
+    <div id="home" className="intro route bg-image background">
+    <div id="stars" />
+    <div id="stars2" />
+    <div id="stars3" />
       <>
-<Grid container spacing={24}>
+<Grid container spacing={10}>
     <Grid item md={3}>
 
     <Card className={classes.root}>
@@ -261,5 +270,7 @@ export default function RecipeReviewCard() {
 </Grid>
 
 </>
-  );
+ </div> );
 }
+
+

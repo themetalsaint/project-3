@@ -2,7 +2,6 @@ import React from "react";
 import $ from "jquery";
 
 
-
 class Navbar extends React.Component {
  
 
@@ -75,6 +74,7 @@ class Navbar extends React.Component {
 
   render() {
     return (
+      
       <nav
         className="navbar navbar-b navbar-trans navbar-expand-md fixed-top"
         id="mainNav"
@@ -104,6 +104,9 @@ class Navbar extends React.Component {
             className="navbar-collapse collapse justify-content-end"
             id="navbarDefault"
           >
+
+  
+ 
             <ul className="navbar-nav">
               <li className="nav-item">
                 <a className="nav-link js-scroll" href="#stage1">
@@ -111,21 +114,30 @@ class Navbar extends React.Component {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll" href="#stage2">
-                  Stage 2
-                </a>
+                <a className="nav-link js-scroll"  href="/Practice">2</a>
+                  
+                
+              
+
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll" href="#stage3">
+                <a className="nav-link js-scroll"  href="/study">
                   Study
+                  
                 </a>
               </li>
+              
+              
+   
+             
              
             </ul>
           </div>
         </div>
       </nav>
+      
     );
+  
   }
 }
 

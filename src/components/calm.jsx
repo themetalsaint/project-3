@@ -34,13 +34,7 @@ class Calm extends React.Component {
                 </strong>
               </p>
               <p className="pt-3">
-                <a
-                  className="btn btn-primary btn js-scroll px-4"
-                  href="#work"
-                  role="button"
-                >
-                 
-                </a>
+              
               </p>
             </div>
           </div>
