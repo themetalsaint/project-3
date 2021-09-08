@@ -1,10 +1,14 @@
 //import stock
 import React from "react";
+import Navbar from "./navbar";
+import Calm from "./calm";
 
 
 class Main extends React.Component {
   render() {
     return (
+      <>
+      <Navbar />
     <section id="work" className="portfolio-mf sect-pt4 route">
         <div className="container">
           <div className="row">
@@ -20,7 +24,8 @@ class Main extends React.Component {
           </div>
         </div>
       </section>
-      
+      <Calm />
+      </>
     );
   }
 }

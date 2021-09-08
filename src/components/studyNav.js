@@ -23,25 +23,25 @@ const StyledBreadcrumb = withStyles((theme) => ({
   },
 }))(Chip); // TypeScript only: need a type cast here because https://github.com/Microsoft/TypeScript/issues/26591
 
-function handleClick(event) {
-  event.preventDefault();
-  console.info('You clicked a breadcrumb.');
-}
 
 export default function CustomizedBreadcrumbs() {
   return (
     <Breadcrumbs aria-label="breadcrumb">
       <StyledBreadcrumb
         component="a"
-        href="#"
+        href="/react"
         label="React"
-        onClick={handleClick}
       />
-      <StyledBreadcrumb component="a" href="./angularStudy.js" label="Angular" onClick={handleClick} />
+
+      <StyledBreadcrumb 
+      component="a" 
+      href="/angular" 
+      label="Angular"  />
+
       <StyledBreadcrumb
         component="a"
+        href="/javascript"
         label="JavaScript"
-        onClick={handleClick}
       />
     </Breadcrumbs>
   );
