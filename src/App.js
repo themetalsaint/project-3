@@ -5,6 +5,9 @@ import Main from './components/Main';
 import React from './components/reactStudy';
 import Angular from './components/angularStudy';
 import Javascript from './components/javascriptStudy';
+import AllNotes from './AllNotes'
+import NewNote from './NewNote'
+import EditNote from './EditNote'
 
 function App() {
   return (
@@ -14,7 +17,11 @@ function App() {
         <Route exact path="/react" component={React}/>
         <Route exact path="/angular" component={Angular}/>
         <Route exact path="/javascript" component={Javascript}/>
-
+      </div>
+      <div>
+        <Route exact path="/" component={AllNotes}/>
+        <Route path="/newnote" component={NewNote}/>
+        <Route path="/note/:id" component={EditNote}/>
       </div>
     </Router>
 

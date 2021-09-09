@@ -3,6 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 
+import { onError } from 'apollo-link-error'
+import Notifications, {notify} from 'react-notify-toast';
+import { ApolloProvider } from "@apollo/react-hooks";
+import { createHttpLink } from "apollo-link-http";
+import { ApolloLink } from "apollo-link";
+import { InMemoryCache } from "apollo-cache-inmemory";
+import { ApolloClient } from "@apollo/client";
+
 import reportWebVitals from './reportWebVitals';
 
 //import css
@@ -19,23 +27,28 @@ import 'popper.js/dist/popper.min.js';
 import 'lightbox2/dist/js/lightbox.min.js';
 
 
-//import components
-import Navbar from './components/navbar.jsx';
-import Main from './components/Main.jsx';
-import Calm from './components/calm.jsx';
-import Study from './components/reactStudy';
-import Angular from './components/angularStudy';
+const errorLink = onError(({ graphQLErrors }) => {
+  if (graphQLErrors) graphQLErrors.map(({ message }) => notify.show(message, 'error'))
+})
+const httpLink = createHttpLink({ uri: 'http://localhost:3000/graphql' });
+const link = ApolloLink.from([
+  errorLink,
+  httpLink,
+]);
+const client = new ApolloClient({
+  uri: 'http://localhost:3000/graphql',
+  cache: new InMemoryCache()
+});
+
 
 
 
 ReactDOM.render(
   <React.Fragment>
+    <Notifications />
+    <ApolloProvider client={client}>
     <App />
-      {/* <Navbar />
-      <Study />
-      <Angular /> */}
-      {/* <Main /> */}
-      {/* <Calm/> */}
+  </ApolloProvider>,
      
   </React.Fragment>,
 document.getElementById('root'));
