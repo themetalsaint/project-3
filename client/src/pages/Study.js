@@ -49,7 +49,7 @@ export default function Study() {
 
   return (
     <>
-    <Grid container spacing={24}>
+    <Grid container spacing={10}>
         <Grid item md={3}>
 
         <Card className={classes.root}>

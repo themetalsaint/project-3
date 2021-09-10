@@ -192,7 +192,7 @@ const Agenda = () => {
     );
   }
 
-const Event = ({key, id, time, title, location, description, onDelete}) => {
+const Event = ({id, time, title, location, description, onDelete}) => {
     return (
       <React.Fragment>
         <div className="media mt-1">
