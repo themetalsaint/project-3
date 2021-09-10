@@ -20,6 +20,11 @@ html {
 body {
   margin: 0;
 }
+.text-slider{
+  text-align: center;
+  padding-left:45%;
+}
+
 
 /**
  * Render the `main` element consistently in IE.
@@ -91,6 +96,10 @@ abbr[title] {
 b,
 strong {
   font-weight: bolder;
+  color:white;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
 }
 
 /**
@@ -362,7 +371,18 @@ body {
   font-size: 16px;
   color: #1a1a1a;
 }
+#mainNav{
+  background-color: rgb(0, 204, 255);
+  font-weight: bolder;
 
+}
+#navbarDefault{
+  margin-left:20%
+}
+
+.navLink{
+  color:white
+}
 h1,
 h2,
 h3,
@@ -1189,6 +1209,7 @@ label form [type='radio'] {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-top:118px;
 }
 
 .flex-wrap {

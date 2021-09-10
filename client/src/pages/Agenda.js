@@ -4,7 +4,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
 import { MDBBtn, MDBInput, MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter, MDBIcon, MDBBadge, MDBContainer, MDBRow, MDBCol} from "mdbreact";
-import "../index.css";
+
 import Study from "./Study";
 
 const Agenda = () => {
@@ -73,6 +73,7 @@ const Agenda = () => {
 
     return (
       <React.Fragment>
+        
         <MDBContainer>
           <MDBRow>
             <MDBCol md="6" className="mb-r">
@@ -100,9 +101,9 @@ const Agenda = () => {
             </MDBCol>
             <MDBCol md="6">
 
-              <Study />
+             
 
-              {/* <h3 className="text-uppercase my-3">Schedule</h3>
+              <h3 className="text-uppercase my-3">Schedule</h3>
               <h6 className="my-3">
                 It's going to be busy that today. You have{" "}
                 <b>{events.length} events </b> today.
@@ -125,7 +126,7 @@ const Agenda = () => {
                 Don't forget your sunglasses. Today will dry and sunny, becoming
                 warm in the afternoon with temperatures of between 20 and 25
                 degrees.
-              </p> */}
+              </p>
             </MDBCol>
           </MDBRow>
         </MDBContainer>
@@ -188,6 +189,7 @@ const Agenda = () => {
             </MDBBtn>
           </MDBModalFooter>
         </MDBModal>
+        <Study />
       </React.Fragment>
     );
   }

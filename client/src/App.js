@@ -13,9 +13,10 @@ import Signup from './pages/Signup';
 import Login from './pages/Login';
 import SingleThought from './pages/SingleThought';
 import Profile from './pages/Profile';
-import Header from './components/Header';
+import Header from './components/Header/navbar';
 import Footer from './components/Footer';
-import Agenda from './pages/Agenda';
+import Agenda from './pages/Agenda'
+import Calm from './components/Calm/calm';
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
@@ -54,9 +55,10 @@ function App() {
             <Route exact path="/agenda">
               <Agenda />
             </Route>
-            <Route exact path="/login">
+            <Route exact path="/Study">
               <Login />
             </Route>
+            
             <Route exact path="/signup">
               <Signup />
             </Route>
@@ -68,6 +70,9 @@ function App() {
             </Route>
             <Route exact path="/thoughts/:thoughtId">
               <SingleThought />
+            </Route>
+            <Route exact path="/calm">
+              <Calm />
             </Route>
           </div>
           <Footer />

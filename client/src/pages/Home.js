@@ -11,6 +11,7 @@ const Home = () => {
   const thoughts = data?.thoughts || [];
 
   return (
+    
     <main>
       <div className="flex-row justify-center">
         <div
@@ -31,6 +32,7 @@ const Home = () => {
         </div>
       </div>
     </main>
+   
   );
 };
 
