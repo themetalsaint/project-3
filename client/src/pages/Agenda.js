@@ -45,17 +45,10 @@ const Agenda = () => {
       value: this.var > 5 ? "Its's grater then 5" : "Its lower or equal 5"
     });
     setEvents({ events: newArray });
-    // setEvents({
-    //   time: "",
-    //   title: "",
-    //   location: "",
-    //   description: ""
-    // });
   };
 
   const handleInputChange = inputName => value => {
     const nextValue = value;
-
     setEvents({
       [inputName]: nextValue
     });
@@ -65,6 +58,7 @@ const Agenda = () => {
     const filteredEvents = events.filter(e => e.id !== eventId);
     setEvents({ filteredEvents });
   };
+
   const toggleModal = (modal) => {
     setModal({
       modal: !modal
@@ -102,35 +96,11 @@ const Agenda = () => {
 
               <Study />
 
-              {/* <h3 className="text-uppercase my-3">Schedule</h3>
-              <h6 className="my-3">
-                It's going to be busy that today. You have{" "}
-                <b>{events.length} events </b> today.
-              </h6>
-              <h1 className="my-3">
-                <MDBRow>
-                  <MDBCol xs="3" className="text-center">
-                    <MDBIcon icon="sun" fixed />
-                  </MDBCol>
-                  <MDBCol xs="9">Sunny</MDBCol>
-                </MDBRow>
-                <MDBRow>
-                  <MDBCol xs="3" className="text-center">
-                  <MDBIcon icon="thermometer-three-quarters" fixed />                  
-                  </MDBCol>
-                  <MDBCol xs="9">23°C</MDBCol>
-                </MDBRow>
-              </h1>
-              <p>
-                Don't forget your sunglasses. Today will dry and sunny, becoming
-                warm in the afternoon with temperatures of between 20 and 25
-                degrees.
-              </p> */}
             </MDBCol>
           </MDBRow>
         </MDBContainer>
 
-        <MDBModal isOpen={modal} toggle={toggleModal}>
+        <MDBModal isOpen={modal} toggle={toggleModal} animation={'false'}>
           <MDBModalHeader
             className="text-center"
             titleClass="w-100 font-weight-bold"
@@ -228,4 +198,3 @@ const Event = ({id, time, title, location, description, onDelete}) => {
   }
 
 export default Agenda;
-// ReactDOM.render(<Agenda />, document.getElementById("root"));
