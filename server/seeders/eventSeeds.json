@@ -1,0 +1,105 @@
+[
+  {
+    "date": "09/11/2021",
+    "time": "10:00 am",
+    "title": "FINAL Group Project 3",
+    "location": "Virtual/Zoom",
+    "notes": "FINAL Group Project 3, Web Development Boot Camp, Unit 23",
+    "eventCreator": "Kent Beck"
+  },
+  {
+    "date": "09/11/2021",
+    "time": "2:30 pm",
+    "title": "GRADUATION PARTY",
+    "location": "The Davie, Raleigh, NC",
+    "notes": "THANK Liz and her friend that owns The Davie.  He is letting us have the upstairs (for free) from 2:30 - 5:30 for graduation festivities.",
+    "eventCreator": "Kent Beck"
+  },
+  {
+    "date": "9/13/2021",
+    "time": "9:30 am",
+    "title": "CISCO Security: Full Stack Engineer",
+    "location": "Virtual / CISCO WebEx",
+    "notes": "REFERRAL: Susan H. put in a GOOD word for me, despite being Under-qualified. If I make a good impression that group may have other roles for me.",
+    "eventCreator": "Kent Beck"
+  },
+  {
+    "date": "9/14/2021",
+    "time": "10:30 am",
+    "title": "Apex - Sales: Sales Engineer",
+    "location": "Apex Solutions, Cary, NC",
+    "notes": "PRACTICE: NOT interested but maybe other roles available?",
+    "eventCreator": "Kent Beck"
+  },
+  {
+    "date": "9/14/2021",
+    "time": "1:30 pm",
+    "title": "DUDE Internal: Junior Web Developer",
+    "location": "Dude Solutions, Cary, NC",
+    "notes": "2ND INTERVIEW: White Board with the tech lead, John Doe, and Manager, Eric Schumm.",
+    "eventCreator": "Kent Beck"
+  },
+  {
+    "date": "9/15/2021",
+    "time": "12:00 pm",
+    "title": "Amazon CareerDay Webinar",
+    "location": "Virtual/Zoom",
+    "notes": "12-2 pm Webinar.",
+    "eventCreator": "Kent Beck"
+  },
+  {
+    "date": "9/15/2021",
+    "time": "2:00 pm",
+    "title": "Amazon CareerDay Tech Team Q/A",
+    "location": "Virtual/Zoom",
+    "notes": "2-3:30 pm Tech division managers will be available for Q/A"
+  },
+  {
+    "date": "9/17/2021",
+    "time": "11:30 am",
+    "title": "IBM Cloud: Front-end UI Software Developer",
+    "location": "IBM Research Triangle Park, NC",
+    "notes": "RELOCATE: This is a junior level role and it preferred to be onsite in Austin, TX with the established team members there. -- Be sure to say: Willing to travel for important meetings and eventually relocate after a year.",
+    "eventCreator": "Kent Beck"
+  },
+  {
+    "date": "9/20/2021",
+    "time": "9:30 am",
+    "title": "NC State: Developer?",
+    "location": "NC State, Raleigh, NC",
+    "notes": "QUESTIONS: What will I be doing and for which departments? Solo or Team? Career path?",
+    "eventCreator": "Kent Beck"
+  },
+  {
+    "date": "9/22/2021",
+    "time": "11:30 am",
+    "title": "Truist: Junior Front-end UI Developer",
+    "location": "Truist Financial, Raleigh, NC",
+    "notes": "REFERRAL: Lew W. referral to HR to be on his team. HIGHLIGHT past UX/UI skills, CSS and REACT.",
+    "eventCreator": "Kent Beck"
+  },
+  {
+    "date": "9/22/2021",
+    "time": "4:00 pm",
+    "title": "Modis - Internal: Web Developer",
+    "location": "Modis Staffing, Cary, NC",
+    "notes": "CONNECTION: Met Marcia S. at RDU WebDev MeetUp 9/1. She suggested this as a great opp to learn and get placed within a year.",
+    "eventCreator": "Kent Beck"
+  },
+  {
+    "date": "9/23/2021",
+    "time": "10:00 am",
+    "title": "DA: Web Developer",
+    "location": "Durham Academy, Durham, NC",
+    "notes": "QUESTIONS: Flexible Office/Remote hours due to commute distance?",
+    "eventCreator": "Kent Beck"
+  },
+  {
+    "date": "",
+    "time": "",
+    "title": "",
+    "location": "",
+    "notes": "",
+    "eventCreator": ""
+  }
+]
