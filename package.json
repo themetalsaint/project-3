@@ -1,7 +1,7 @@
 {
   "name": "project-3",
   "version": "1.0.0",
-  "description": "",
+  "description": "This project has been created with developers and coders in mind! Interviewing for a new job can be very stressful and you always want to be prepared for the interview.",
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
@@ -16,5 +16,7 @@
   "devDependencies": {
     "concurrently": "^5.1.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "escape-string-regexp": "^5.0.0"
+  }
 }
