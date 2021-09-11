@@ -16,7 +16,5 @@
   "devDependencies": {
     "concurrently": "^5.1.0"
   },
-  "dependencies": {
-    "escape-string-regexp": "^5.0.0"
-  }
+  "dependencies": {}
 }
