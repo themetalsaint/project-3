@@ -25,7 +25,7 @@ const Footer = () => {
           >
             ❤️
           </span>{' '}
-          by Rachael, Bob, Stephen, Ted, and Tommy.
+          by: Rachael, Bob, Stephen, Ted, and Tommy.
         </h4>
       </div>
     </footer>
