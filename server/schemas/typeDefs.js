@@ -1,42 +1,50 @@
 const { gql } = require('apollo-server-express');
-import { makeExecutableSchema } from "graphql-tools";
-import { resolvers } from "./resolvers";
 
 const typeDefs = gql`
-type Note {
-  _id: ID!
-  title: String!,
-  date: Date,
-  content: String!
- }
+  type User {
+    _id: ID
+    username: String
+    email: String
+    password: String
+    thoughts: [Thought]!
+  }
 
-scalar Date
+  type Thought {
+    _id: ID
+    thoughtText: String
+    thoughtAuthor: String
+    createdAt: String
+    comments: [Comment]!
+  }
 
-type Query {
-  getNote(_id: ID!): Note
-  allNotes: [Note]
- }
+  type Comment {
+    _id: ID
+    commentText: String
+    commentAuthor: String
+    createdAt: String
+  }
 
-input NoteInput {
-  title: String!
-  content: String!
- }
+  type Auth {
+    token: ID!
+    user: User
+  }
 
- input NoteUpdateInput {
-    title: String
-    content: String
- }
+  type Query {
+    users: [User]
+    user(username: String!): User
+    thoughts(username: String): [Thought]
+    thought(thoughtId: ID!): Thought
+    me: User
+  }
 
-type Mutation {
-  createNote(input: NoteInput) : Note
-  updateNote(_id: ID!, input: NoteUpdateInput): Note
-  deleteNote(_id: ID!) : Note
- }
+  type Mutation {
+    addUser(username: String!, email: String!, password: String!): Auth
+    login(email: String!, password: String!): Auth
+    addThought(thoughtText: String!): Thought
+    addComment(thoughtId: ID!, commentText: String!): Thought
+    removeThought(thoughtId: ID!): Thought
+    removeComment(thoughtId: ID!, commentId: ID!): Thought
+  }
 `;
 
-const schema = makeExecutableSchema({
-  typeDefs,
-  resolvers
-});
-
-export default schema;
+module.exports = typeDefs;
